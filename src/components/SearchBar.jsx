@@ -1,14 +1,17 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Search } from "lucide-react";
 import fetchProducts from "../api/fetchProducts";
+import AppContext from "../context/AppContext";
 
 function SearchBar() {
   const [searchValue, setSearchValue] = useState("");
+  const { setProducts, setLoading } = useContext(AppContext);
   const handleSearch = async (event) => {
     event.preventDefault();
-
+    setLoading(true);
     const products = await fetchProducts(searchValue);
-    console.log(products);
+    setProducts(products);
+    setLoading(false);
     setSearchValue("");
   };
 
