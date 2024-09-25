@@ -1,5 +1,5 @@
 import "./App.css";
-import Cart from "./components/cart";
+import Cart from "./components/Cart";
 import Header from "./components/Header";
 import Products from "./components/Products";
 import Provider from "./context/Provider";

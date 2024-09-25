@@ -1,9 +1,17 @@
 import { TbShoppingBagPlus } from "react-icons/tb";
 import propTypes from "prop-types";
 import currency from "../utils/currency";
+import { useContext } from "react";
+import AppContext from "../context/AppContext";
 
 function ProductCard({ data }) {
-  const { title, price, thumbnail } = data;
+  const { thumbnail, title, price } = data;
+
+  const { cartItems, setCartItems } = useContext(AppContext);
+
+  const handleAddCart = () => {
+    setCartItems([...cartItems, data]);
+  };
   return (
     <section className="flex flex-col h-full cursor-pointer w-full max-w-64 bg-white m-auto rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl">
       <img
@@ -21,6 +29,7 @@ function ProductCard({ data }) {
       <button
         type="button"
         className="flex items-center justify-center gap-1 p-2 bg-Orangele text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 m-4"
+        onClick={handleAddCart}
       >
         <TbShoppingBagPlus className="text-xl" />
         <span>Adicionar ao carrinho</span>
