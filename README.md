@@ -1,8 +1,11 @@
-# React + Vite
+🛒 Projeto de E-commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um e-commerce desenvolvido com Vite, JavaScript, Tailwind CSS e a API do Mercado Livre. A aplicação consome dados da API para buscar e exibir produtos, permitindo que o usuário adicione itens ao carrinho e finalize a compra de maneira funcional.
 
-Currently, two official plugins are available:
+🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Pesquisar produtos diretamente da API do Mercado Livre;
+Visualizar detalhes dos produtos;
+Adicionar itens ao carrinho de compras;
+Remover items do carrinho;
+Acompanhar o valor total da compra em tempo real.
