@@ -4,8 +4,8 @@ Este projeto é um e-commerce desenvolvido com Vite, JavaScript, Tailwind CSS e 
 
 🚀 Funcionalidades
 
-Pesquisar produtos diretamente da API do Mercado Livre;
-Visualizar detalhes dos produtos;
-Adicionar itens ao carrinho de compras;
-Remover items do carrinho;
-Acompanhar o valor total da compra em tempo real.
+•Pesquisar produtos diretamente da API do Mercado Livre;
+•Visualizar detalhes dos produtos;
+•Adicionar itens ao carrinho de compras;
+•Remover items do carrinho;
+•Acompanhar o valor total da compra em tempo real.
